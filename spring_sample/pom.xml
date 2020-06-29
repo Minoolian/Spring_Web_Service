@@ -6,7 +6,7 @@
 	<groupId>org.zerock</groupId>
 	<artifactId>controller</artifactId>
 	<name>ex06_2</name>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
 		<java-version>1.8</java-version>
@@ -239,13 +239,6 @@
 			<version>2.3.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
-		<dependency>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-jar-plugin</artifactId>
-			<version>3.2.0</version>
-		</dependency>
-
 
 	</dependencies>
 	<build>
@@ -284,6 +277,23 @@
 					<mainClass>org.test.int1.Main</mainClass>
 				</configuration>
 			</plugin>
+
+<!-- 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>org.zerock.controller.HomeController</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin> -->
+			
+			
 		</plugins>
 	</build>
 </project>
