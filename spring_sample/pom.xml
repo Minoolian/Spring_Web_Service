@@ -14,10 +14,6 @@
 		<org.aspectj-version>1.9.0</org.aspectj-version>
 		<org.slf4j-version>1.7.25</org.slf4j-version>
 
-		<!-- 프로젝트 인코딩 타입과 메이븐 인코딩 타입이 다른 문제 해결 -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -277,23 +273,6 @@
 					<mainClass>org.test.int1.Main</mainClass>
 				</configuration>
 			</plugin>
-
-<!-- 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.2.0</version>
-				<configuration>
-					<archive>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>org.zerock.controller.HomeController</mainClass>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin> -->
-			
-			
 		</plugins>
 	</build>
 </project>
