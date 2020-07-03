@@ -1,0 +1,19 @@
+language: java
+jdk:
+  - jdk8
+
+branche:
+  only:
+    - master
+
+# Travis CI 서버의 Home
+#cache:
+  #directories:
+
+script: mvn clean package
+
+# CI 실행 완료시 메일
+notifications:
+  email:
+    recipients:
+      - micky3073@naver.com
