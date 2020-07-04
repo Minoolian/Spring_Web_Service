@@ -21,7 +21,7 @@ notifications:
 before_deploy:
   - zip -r Spring_Web_Service *
   - mkdir -p deploy
-  - mv Spring_Web_Servce.zip deploy/Spring_Web_Servce.zip
+  - mv Spring_Web_Service.zip deploy/Spring_Web_Servce.zip
 
 
 deploy:
